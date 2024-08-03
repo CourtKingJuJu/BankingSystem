@@ -2,6 +2,25 @@ import pandas as pd
 import csv 
 from datetime import datetime
 
+
+class CSV():
+    CSVFile = 'Transaction_Data.csv'
+    
+    @classmethod
+    def initalize_csv(cls):
+        try: 
+            pd.read_csv(cls.CSVFile)
+        except FileNotFoundError:
+            dataFrame = pd.DataFrame(columns=["data", "amount", "category", "description"])
+            dataFrame.to_csv(cls.CSVFile, index=False)
+    
+    @classmethod
+    def addTransaction(cls, date, amount, category, description):
+        pass
+     
+CSV.initalize_csv()
+
+
 def main():
     while True:
         print('\n1. Add a new transaction')
