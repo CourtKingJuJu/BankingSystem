@@ -1,7 +1,7 @@
 import pandas as pd
 import csv 
 from datetime import datetime
-
+from data import getAmount, getCategory, getDate, getDescription
 
 class CSV():
     CSVFile = 'Transaction_Data.csv'
@@ -31,8 +31,14 @@ class CSV():
             
         print("Added Entry, What else can we help you with today")
         
-             
-CSV.initalize_csv()
+
+    def add():
+        CSV.initalize_csv()
+        date = getDate("Enter the date of the Transaction (dd-mm-yyyy) or press enter for todays date: ", allowDefault=True)
+        amount = getAmount
+        category = getCategory
+        description = getDescription
+        CSV.addTransaction(date, amount, category, description)
 
 
 
@@ -48,7 +54,7 @@ def main():
             break
         
         if request == '1':
-            pass
+            CSV.add()
         
         if request == '2':
             pass
