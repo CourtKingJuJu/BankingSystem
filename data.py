@@ -61,6 +61,6 @@ def getCategory():
     getCategory()
 
 
-def getDescription() -> str:
-    return input("Enter a breif description of the Transaction")
+def getDescription():
+    return input("Enter a breif description of the Transaction (Optional): ")
 

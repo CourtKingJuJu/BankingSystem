@@ -1,3 +1,5 @@
 date,amount,category,description
-20-07-2024,125.65,Income,Salary
-22-10-2024,600,Salary,Income
+
+05-08-2024,<function getAmount at 0x106075d00>,<function getCategory at 0x106075e40>,<function getDescription at 0x106075ee0>
+05-08-2024,300.0,Income, Test
+05-08-2024,300.0,Income, Test

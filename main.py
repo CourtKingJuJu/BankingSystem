@@ -8,7 +8,7 @@ class CSV():
     columns = ["date", "amount", "category", "description"]
     
     @classmethod
-    def initalize_csv(cls):
+    def initialize_csv(cls):
         try: 
             pd.read_csv(cls.CSVFile)
         except FileNotFoundError:
@@ -29,16 +29,16 @@ class CSV():
             writer = csv.DictWriter(csvfile, fieldnames=cls.columns)
             writer.writerow(newData)
             
-        print("Added Entry, What else can we help you with today")
+        print("Added Entry, What else can we help you with today?")
         
 
-    def add():
-        CSV.initalize_csv()
-        date = getDate("Enter the date of the Transaction (dd-mm-yyyy) or press enter for todays date: ", allowDefault=True)
-        amount = getAmount
-        category = getCategory
-        description = getDescription
-        CSV.addTransaction(date, amount, category, description)
+def add():
+    CSV.initialize_csv()
+    date = getDate("Enter the date of the Transaction (dd-mm-yyyy) or press enter for todays date: ", allowDefault=True)
+    amount = getAmount()
+    category = getCategory()
+    description = getDescription()
+    CSV.addTransaction(date, amount, category, description)
 
 
 
@@ -54,7 +54,7 @@ def main():
             break
         
         if request == '1':
-            CSV.add()
+            add()
         
         if request == '2':
             pass
