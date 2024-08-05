@@ -35,6 +35,7 @@ class CSV():
 CSV.initalize_csv()
 
 
+
 def main():
     while True:
         print('\n1. Add a new transaction')
@@ -47,19 +48,7 @@ def main():
             break
         
         if request == '1':
-            print('\n1. Deposit')
-            print('2. Withdrawl')
-            transactionType = input('Select your request by entering (1-2):')
-            
-            if transactionType == '1':
-                
-                date = input("Input the date in format: DD-MM-XXXX: ")
-                amount = input("Input amount of money: ")
-                category = input("Input the category type (I.E. Salary): ")
-                description = input("Input the description (I.E. Unemployment): ")
-                CSV.addTransaction(date, amount, category, description)
-            else:
-                pass
+            pass
         
         if request == '2':
             pass
