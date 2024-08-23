@@ -1,4 +1,22 @@
 date,amount,category,description
 
-05-08-2023,300.0,Income,Income
-05-08-2024,100.0,Expense,Expense
+07-01-2023,105.87,Expense,Groceries
+14-01-2023,235.55,Income,Refund
+23-02-2023,90.23,Expense,Utilities
+15-03-2023,1500.75,Income,Salary
+30-03-2023,438.10,Expense,Rent
+08-05-2023,253.42,Expense,Groceries
+14-07-2023,1893.50,Income,Investment returns
+22-08-2023,732.19,Expense,Utilities
+01-09-2023,1289.14,Income,Rental income
+10-09-2023,402.87,Expense,Transportation
+27-10-2023,960.20,Expense,Medical bills
+01-11-2023,1920.45,Income,Bonus
+22-11-2023,1050.32,Income,Freelance work
+18-12-2023,804.44,Expense,Transportation
+25-01-2024,1500.75,Income,Salary
+12-03-2024,550.65,Expense,Entertainment
+27-03-2024,1555.75,Income,Salary
+29-06-2024,1111.99,Income,Investment returns
+03-07-2024,1250.55,Income,Freelance work
+20-10-2024,1289.14,Income,Rental income
